@@ -1,0 +1,23 @@
+[
+    {
+        "user":"jazzurieles",
+        "password": "1234567",
+        "nombre": "Jazzlin",
+        "apellido": "Urieles",
+        "tipousuario": "Admin"  
+    },
+    {
+        "user":"diegovi",
+        "password": "1234567",
+        "nombre": "Diego",
+        "apellido": "Villamil",
+        "tipousuario": "Student"  
+    },
+    {
+        "user":"jaimepa",
+        "password": "1234567",
+        "nombre": "Jaime",
+        "apellido": "Pacheco",
+        "tipousuario": "Student"
+    }
+]

@@ -4,49 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="CSS/bootstrap.css">
+    <script src="js/bootstrap.min.js"></script>
     
 </head>
 <body class="bg-light">
-    <div class="container">
+    <header class="text-center">
+        <img src="../Parcial1/img/imagenencabezado.png" class="img-fluid">
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-        <div class="row">
-            <div class="m-auto text-center col-xl-6 col-lg-6 col-md-5 col-sm-12 col-12">
-                <img src="../Parcial1/img/logousuario.png" class="img-fluid" alt="">
-            </div>
-            <br><br><br>
-            <div class="mt-5 mb-5 col-xl-6 col-lg-6 col-md-7 col-sm-12 col-12">
-                <form>
-                    <a class="navbar-brand text-dark" href="#">
-                        <img src="../Parcial1/img/logocul.png" alt="" width="45" height="auto" class="d-inline-block align-text-top"><b> Iniciar Sesión</b>
-                    </a>
-                    <br><br>
-                    <div class="mb-3">
-                      <label for="InputUser" class="form-label">Usuario</label>
-                      <input type="text" class="form-control" id="InputUser" placeholder="Digite usuario">
-                    </div>
-                    <div class="mb-3">
-                      <label for="InputPassword" class="form-label">Contraseña</label>
-                      <input type="password" class="form-control" id="InputPassword" placeholder="Digite contraseña">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputTypeUser" class="form-label">Tipo de Usuario</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccione tipo de usuario</option>
-                            <option value="1">ESTUDIANTE</option>
-                            <option value="2">PSICOLOGO</option>
-                            <option value="3">ADMINISTRATIVO</option>
-                        </select>
-                    </div>
-                    <button type="button" class="btn btn-secondary d-block mx-auto">Ingresar</button>
-                </form>
+            <li class="nav-item text-white">
+                <a class="navbar-brand" href="#">
+                    <img src="../Parcial1/img/logocul.png" alt="" width="50" height="auto">
+                </a>
+            </li>
+            <a class="navbar-brand bi-trash" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 
-            </div>
-            <a class="border navbar-brand text-center text-dark" href="../Parcial1/html/inicio.html">Ingresar a Inicio</a>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="../Parcial1/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="../Parcial1/html/acesorias.html">Acesorías</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="../Parcial1/html/equipo.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="../Parcial1/html/funciona.html">¿Cómo funciona?</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-dark" href="../Parcial1/html/solicitudes.html">Solicitudes</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-dark" href="../Parcial1/html/informes.html">Informes</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-dark" href="../Parcial1/html/contactenos.html">Contáctenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="../Parcial1/html/administrador.html">Administrador</a>
+                </li>
+                
+            </ul>
+              <a class="nav-link text-dark mb-2" href="html/login.html"><b>Iniciar sesión</b></a>
+  
+            <div class="nav-link text-info mb-2" id="lbluser"></div>
+
+            <script src="js/validacion.js"></script>    
         </div>
-      </div>
-    </div>
+        </div>
+    </nav>
+            <div class="container">
+            <div class="row">
+                <div class="mt-4 col-xl-6 col-lg-6 col-md-7 col-sm-12 col-12">
+                    <h1 class="text-primary text-center">¿Qué es el asesoramiento psicológico?</h1>
+                    <p class="lead text-dark">
+                    Consiste en el asesoramiento y aprendizaje de técnicas psicológicas, para poder comprender y solucionar situaciones en las que nos sentimos perdidos, nos bloqueamos, no sabemos decidir, no nos adaptamos bien a determinados acontecimientos y/o relaciones, no nos podemos concentrar, nos sentimos sin motivación, nos sentimos mal con nosotros mismos, no entendemos el comportamiento de los demás y no sabemos cómo tratarlos, etc. <br> <br>
+                    Son situaciones que hacen que nos sintamos mal, sin saber lo que podemos hacer para salir de ellas o abordarlas adecuadamente. En estos casos, es conveniente la ayuda de un profesional que nos aporte diferentes estrategias para solucionar las situaciones que afectan a nuestra relación tanto con el entorno y demás personas, como con nosotros mismos, con la finalidad de mejorar nuestra calidad de vida y bienestar emocional.
+
+                    </p>
+                </div>
+                    <div class="m-auto text-center col-xl-6 col-lg-6 col-md-5 col-sm-12 col-12">
+                        <img src="../Parcial1/img/bienestar1-01.png" class="img-fluid">
+                    </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <p class="lead text-dark">
+                        <br>
+                        Situaciones frecuentes que pueden requerir de ayuda para mejorar nosotros mismos o ayudar a los que nos rodean
+
+                        <ul class="lead">
+                            <li>Sentimientos de soledad – Crisis personales</li>
+                            <li>Insatisfacción generalizada con nosotros mismos y/ o quienes nos rodean y nuestro entorno</li>
+                            <li>Problemas de adaptación a nuevas situaciones (incorporación a un nuevo trabajo, cambio de ciudad, situaciones novedosas, duelo ante la muerte de un ser querido…)</li>
+                            <li>Falta de concentración y atención</li>
+                            <li>Resolución de problemas – Toma de decisiones</li>
+                            <li>Inquietud e irritabilidad -Enfados continuos</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+                <div class=" lead text-dark col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <ul>
+                    <li>Problemas de conducta – Falta de motivación</li>
+                    <li>Sentimientos negativos: de soledad, de desamparo, de vergüenza, de culpa…</li>
+                    <li>Insatisfacción -Bloqueo – Desgana</li>
+                    <li>Crisis personales (abandono de la pareja, cambio de valores…)</li>
+                    <li>Ayuda psicológica ante determinadas enfermedades (cáncer, esclerosis múltiple…)</li>
+                    <li>Afrontamiento de las secuelas físicas y emocionales después de accidentes o eventos traumáticos</li>
+                    <li>Timidez- Habilidades sociales- Asertividad</li>
+                    <li>Problemas psicológicos derivados de infertilidad – Procesos de adopción etc.</li>
+                    <li>Problemas de relación – Dependencia respecto a otras personas – Moobing</li>
+                    </ul>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="ratio ratio-16x9">
+                    <iframe width="580" height="315" class="text-center m-auto" src="https://www.youtube.com/embed/n_c0HcoblCg?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+            </div>
+            <div class="text-center col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" >
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                    <br>
+                      <p><em> Nuestro objetivo primordial es trabajar por la formación y el desarrollo integral de la comunidad educativa de la Corporación universitaria Latinoamericana y ayudar a construir un ambiente de trabajo y de estudio que sea propicio para el desarrollo de las actividades propias de nuestra Institución de Educación Superior para lograr la Permanencia de los estudiantes.</em></p>
+                    </blockquote>
+                  </figure>
+            </div>
+            <div class="my-auto col-xl-6 col-lg-6 col-md-5 col-sm-12 col-12">
+                <br>
+                <img src="../Parcial1/img/imgasesoria.jpg" class="img-fluid d-inline-block mx-auto" alt="">
+                <p class="text-muted"><em>Tienes acceso a nuestros mejores psicológicos</em> </p>
+            </div>
+            <div class=" text-center col-xl-6 col-lg-6 col-md-7 col-sm-12 col-12">
+                
+                <h5>Nuestra Ubicación</h5>
+                
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15666.331491456984!2d-74.7907562!3d10.9948244!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b195f6bb10f7ede!2sCUL%20CORPORACION%20UNIVERSITARIA%20LATINOAMERICANA!5e0!3m2!1ses-419!2sco!4v1646241762265!5m2!1ses-419!2sco" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <br>
+        
+        </div>
         <div class="container-fluid bg-dark">
             <div class="row">
                 <div class=" text-white text-center col-xl-4 col-lg-4 col-md-6 col-sm-5">
@@ -93,12 +180,6 @@
                 <span class="mx-auto d-inline-block bg-dark px-2 text-muted">© 2022 CORPORACIÓN UNIVERSITARIA LATINOAMERICANA - CUL</span>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    </div>
-       
-    
-    
+            
 </body>
 </html>
