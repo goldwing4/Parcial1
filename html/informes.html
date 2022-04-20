@@ -7,6 +7,7 @@
     <title>Informes</title>
     <link rel="stylesheet" href="../CSS/bootstrap.css">
     <script src="../js/bootstrap.min.js"></script>
+    
 </head>
 <body class="bg-light">
     <header class="text-center">
@@ -63,41 +64,50 @@
     </nav>
     <div class="container">
         <br>
-        <h1 class="text-primary">Informe</h1>
+        <h1 class="text-primary">Informe <a href="#"> <img src="../img/informes.png" class="img-fluid " width="80" height="auto" ></a></h1>
         <hr>
-
         <div class="row">
-            <div class="table-responsive col-lg-6 col-md-5 col-sm-12 col-12">
-                <table class="table table-bordered">
-                <tr><th>Nombre del estudiante</th>
-                    <th>Fecha estipulada</th>
-                    <th>Hora</th></tr>
-                <tr>
-                    <td> <input type="text" name="inombre del solicitante" ></td>
-                    <td><input type="date" name="ifechas"></td>
-                    <td><input type="time" name="ihoras"></td>
-                </tr>
-                <tr>
-                    <th colspan="3">Observaciones</th>
-                </tr>
-                <tr>
-                    <td colspan="3"><textarea name="" cols="53" rows="25"></textarea></td>
-                </tr>
-                </table> <br>
-                <p class="text-center">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="button">Enviar Informe</button>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="button">Solicitar informe</button> <br>
-                </p>
-                
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <form onsubmit="event.preventDefault();enviarFormulario();" autocomplete="off">
+                        <label for="nEstudiante">Nombre del Estudiante</label><label class="d-none text-danger ms-1" id="validarNombre">(Debes ingresar un nombre)</label>
+                        <input type="text" class="form-control" name="nEstudiante" id="nEstudiante">
+                    
+                        <label for="fechaSesion">Fecha de la sesión</label>
+                        <input type="date" class="form-control" name="fechaSesion" id="fechaSesion">
+                    
+                        <label for="horaSesion">Hora</label>
+                        <input type="time" class="form-control" name="horaSesion" id="horaSesion">
+                    
+                        <label for="cObserva">Observaciones</label>
+                        <textarea class="form-control" name="cObserva" id="cObserva" cols="30" rows="10"></textarea>
+                    <br>
+                    <div>
+                        <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Enviar">
                     </div>
-        
-                    <div class="img-fluid col-lg-6 col-md-7 col-sm-12 col-12">
-                        <img src="../img/informes.png" alt="">
-                    </div>
-        </div>
-            <hr>
+                </form>
             </div>
-            <div class="container-fluid bg-dark">
+            <div class="table-responsive col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                <table class="table  table-bordered text-center" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>N. Estudiante</th>
+                            <th>Fecha de Sesión</th>
+                            <th>Hora</th>
+                            <th>Observaciones</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+            <script src="../js/informe.js"></script>
+                  
+    </div>
+        
+    <div class="container-fluid bg-dark">
                 <div class="row">
                     <div class=" text-white text-center col-xl-4 col-lg-4 col-md-6 col-sm-5">
                         <br>
@@ -142,6 +152,6 @@
                             Personería Jurídica: Resolución 8103 del 19 de diciembre 2006</em> </p>
                     <span class="mx-auto d-inline-block bg-dark px-2 text-muted">© 2022 CORPORACIÓN UNIVERSITARIA LATINOAMERICANA - CUL</span>
                     </div>
-                </div>
+        </div>
 </body>
 </html>
