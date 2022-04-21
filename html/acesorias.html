@@ -100,89 +100,122 @@
             </div>
             <br>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Nombres</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite Nombres">
-                     </div>
-                     <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Apellidos</label>
-                      <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Digite Apellidos">
-                     </div>
-                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Tipo De Documento:</label>
-                     </div>
-                     <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Cedula De Ciudadania</label>
-                      </div>
-                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Tarjeta De Identidad</label>
-                      </div>
-                      <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Pasaporte</label>
-                      </div>
-                      <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Cedula Extranjera</label>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Numero De Documento</label>
-                        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Digite numero de documento">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Programa Academico</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite Programa academico">
-                      </div>
+                <form onsubmit="event.preventDefault();enviarFormulario();" autocomplete="off" >
+                    
+                      <label for="nomb" class="form-label" >Nombres</label><label class="d-none text-danger ms-1" id="validarNombre">(Debes ingresar un nombre)</label>
+                      <input type="text" class="form-control" id="nomb" name="nomb" aria-describedby="emailHelp" placeholder="Digite Nombres">
+                     
+                     
+                      <label for="apell" class="form-label">Apellidos</label>
+                      <input type="text" class="form-control" id="apell" name="apell" placeholder="Digite Apellidos">
+                     
+                     
+
                       
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Semestre</label>
-                        <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Digite Semestre">
-                      </div>
+                      
+                        tipo de documento <br><br>
+                    
+                        <label for="TypeDocument" class="form-label"></label>
+                          <input type="radio" name="TypeDocument" id="TypeDocument" value="cedula"> Cedula
+                        <br>
+                    
+                        <label for="TypeDocument" class="form-label"></label>
+                          <input type="radio" name="TypeDocument"  value="Tarjeta de Identidad" id="TypeDocument" > Tarjeta de Identidad<br>
+
+                          <label for="TypeDocument" class="form-label"></label>
+                          <input type="radio" name="TypeDocument" value="pasaporte" id="TypeDocument" > pasporte<br>
+
+                          <label for="TypeDocument" class="form-label"></label>
+                          <input type="radio" name="TypeDocument" value="Cedula extranjera" id="TypeDocument" > Cedula extranjera<br>
+                          
+                      
+                     
+                     
+                      
+                        <label for="numDocument" class="form-label">Numero De Documento</label>
+                        <input type="number" class="form-control" id="numDocument" placeholder="Digite numero de documento">
+                      
+                      
+                        <label for="promg" class="form-label">Programa Academico</label>
+                        <input type="text" class="form-control" id="promg" aria-describedby="emailHelp" placeholder="Digite Programa academico">
+                      
+                      
+                      
+                        <label for="semestre" class="form-label">Semestre</label>
+                        <input type="number" class="form-control" id="semestre" placeholder="Digite Semestre">
+                      
                       
                       </div>
                       <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Telefono</label>
-                          <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Digite Digite telefono">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail" class="form-label">Correo</label>
-                          <input type="email" class="form-control" id="exampleInputEmail" placeholder="Digite correo">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Elija La Psicologa:</label>
-                       </div>
-                       <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Elias Algarin Escalante</label>
-                        </div>
-                        <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Kelly Charris Medrano
-                          </label>
-                        </div>
-                        <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Melisa Romero Sierra</label>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Fecha deseada</label>
-                          <input type="date" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Hora Deseada</label>
-                          <input type="time" class="form-control" id="exampleInputPassword1">
+                        
+                          <label for="telf" class="form-label">Telefono</label>
+                          <input type="number" class="form-control" id="telf" placeholder="Digite Digite telefono">
+                        
+                        
+                          <label for="correo" class="form-label">Correo</label>
+                          <input type="email" class="form-control" id="correo" placeholder="Digite correo">
+                        
+
+                        
+                          
+                            Psicologos <br><br>
+                        
+                            <label><input type="radio" name="psyco" value="Elias Algarin Escalante"> Elias Algarin Escalante</label><br>
+                        
+                            <label><input type="radio" name="psyco" value="Kelly Charris Medrano  "> Kelly Charris Medrano</Elabel><br>
+
+                            <label><input type="radio" name="psyco" value="Melisa Romero Sierra  "> Melisa Romero Sierra</label><br>
+    
+                          
+                         
+
+                        
+                          <label for="fecha" class="form-label">Fecha deseada</label>
+                          <input type="date" class="form-control" id="fecha">
+                        
+                        
+                          <label for="hora" class="form-label">Hora Deseada</label>
+                          <input type="time" class="form-control" id="hora">
+                      
+                      <div class="text-center">
+                        
+                        <input class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Enviar">
                       </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
                   </form>
                 </div>
+                <div class="table-responsive col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <table class="table  table-bordered text-center" id="employeeList">
+                      <thead>
+                          <tr>
+                              <th>N°</th>
+                              <th>nombres</th>
+                              <th>Apellidos</th>
+                              <th>Tipo de Documento</th>
+                              <th>Numero de Documento</th>
+                              <th>progrma</th>
+                              <th>semestre</th>
+                              <th>telefono</th>
+                              <th>correo</th>
+                              <th>Psicologo</th>
+                              <th>fecha</th>
+                              <th>hora</th>
+                              <th></th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                  </table>
+              </div>
             </div>
+            <script src="../js/asesaoria.js"></script>
           </div>
       </div>
       <br><br>
+
+      <div>
+
+      </div>
 
       <div class="container-fluid bg-dark">
         <div class="row">
