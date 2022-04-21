@@ -31,30 +31,30 @@ let leerDatos=()=> {
 let nuevoRegistro=(data)=> {
     let tabla = document.getElementById("employeeList").getElementsByTagName('tbody')[0];
     let nuevaFila = tabla.insertRow(tabla.length);
+   cell1 = nuevaFila.insertCell(0);
+    cell1.innerHTML = data.nomb;
     cell2 = nuevaFila.insertCell(1);
-    cell2.innerHTML = data.nomb;
+    cell2.innerHTML = data.apell; a
     cell3 = nuevaFila.insertCell(2);
-    cell3.innerHTML = data.apell;
+    cell3.innerHTML = data.TypeDocument;
     cell4 = nuevaFila.insertCell(3);
-    cell4.innerHTML = data.TypeDocument;
+    cell4.innerHTML = data.numDocument;
     cell5 = nuevaFila.insertCell(4);
-    cell5.innerHTML = data.numDocument;
+    cell5.innerHTML = data.promg;
     cell6 = nuevaFila.insertCell(5);
-    cell6.innerHTML = data.promg;
-    cell7 = nuevaFila.insertCell(6);
-    cell7.innerHTML = data.semestre;
-    cell8 = nuevaFila.insertCell(7);
-    cell8.innerHTML = data.telf;
-    cell9 = nuevaFila.insertCell(8);
-    cell9.innerHTML = data.correo;
-    cell10 = nuevaFila.insertCell(9);
-    cell10.innerHTML = data.psyco;
-    cell11 = nuevaFila.insertCell(10);
-    cell11.innerHTML = data.fecha;
-    cell12 = nuevaFila.insertCell(11);
-    cell12.innerHTML = data.hora;
-    cell13 = nuevaFila.insertCell(12);
-    cell13.innerHTML = `<button class="btn btn-outline-info my-2 my-sm-0" onClick="editarRegistro(this)">Editar</button>
+    cell6.innerHTML = data.semestre;
+    cell9 = nuevaFila.insertCell(6);
+    cell9.innerHTML = data.telf;
+    cell10 = nuevaFila.insertCell(7);
+    cell10.innerHTML = data.correo;
+    cell11 = nuevaFila.insertCell(8);
+    cell11.innerHTML = data.psyco;
+    cell12 = nuevaFila.insertCell(9);
+    cell12.innerHTML = data.fecha;
+    cell13 = nuevaFila.insertCell(10);
+    cell13.innerHTML = data.hora;
+    cell14 = nuevaFila.insertCell(11);
+    cell14.innerHTML = `<button class="btn btn-outline-info my-2 my-sm-0" onClick="editarRegistro(this)">Editar</button>
                        <button class="btn btn-outline-danger my-2 my-sm-0" onClick="eliminarRegistro(this)">Borrar</button>`;
 }
 
